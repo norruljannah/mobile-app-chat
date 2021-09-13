@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_profile_image"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:cropToPadding="true"
+        android:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/custom_profile_name"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Display UserName"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/custom_user_last_seen"
+        android:layout_width="312dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/custom_profile_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:text="Last Seen"
+        android:textColor="@android:color/background_light"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
